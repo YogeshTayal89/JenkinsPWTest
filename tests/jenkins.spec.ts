@@ -6,6 +6,7 @@ test('Test Case 1', async ({ page }) => {
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle("Google");
+  console.log("Ending  Test case 1")
 });
 
 test('Test Case 2', async ({ page }) => {
@@ -14,6 +15,7 @@ test('Test Case 2', async ({ page }) => {
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle("Google");
+  console.log("Ending  Test case 2")
 });
 
 test('Test Case 3', async ({ page }) => {
@@ -22,4 +24,14 @@ test('Test Case 3', async ({ page }) => {
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle("GoogleWrong");
+  console.log("Ending  Test case 3")
+});
+
+test('Test Case 3', async ({ page }) => {
+  console.log("Starting Test case 3")
+await page.goto('https://google.com');
+
+// Expect a title "to contain" a substring.
+await expect(page).toHaveTitle("Google");
+console.log("Ending  Test case 4")
 });

@@ -27,8 +27,8 @@ test('Test Case 3', async ({ page }) => {
   console.log("Ending  Test case 3")
 });
 
-test('Test Case 3', async ({ page }) => {
-  console.log("Starting Test case 3")
+test('Test Case 4', async ({ page }) => {
+  console.log("Starting Test case 4")
 await page.goto('https://google.com');
 
 // Expect a title "to contain" a substring.
